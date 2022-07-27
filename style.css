@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+body{
+    background-color:hsl(30, 38%, 92%);
+}
+
+.card{
+    font-family: Montserrat;
+    width: calc(100vw - 4em);
+    margin: 4em auto;
+    background-color: #fff;
+    overflow: hidden;    
+}
+@media (min-width: 1440px){
+    .card{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        max-width: 40em;
+        aspect-ratio: 1.5;
+    }
+}
+.image{
+    width: 100%;
+    height: auto;
+}
+
+.mobile{
+    width: 100%;
+}
+@media (min-width: 1440px){
+    .mobile{
+        display: none;
+    }
+}
+
+.desktop{
+    display: none;
+}
+@media (min-width: 1440px){
+    .desktop{
+        display: block;
+        width: 100%;
+    }
+}
+
+div.title{
+    font-family: Fraunces;
+    width: fit-content;
+    position: relative;
+    padding-top: 1em;
+    color: hsl(212, 21%, 14%);
+}
+
+div.title > h1{
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+div.title::before{
+    font-weight: 100;
+    font-family: Montserrat;
+    width: fit-content;
+    aspect-ratio: 1;
+    position: absolute;
+    content: "PERFUME";
+    left: 0;
+    top: 0.5em;
+    color: hsl(158, 36%, 37%);
+    letter-spacing: 0.15em;
+}
+
+p.description, #origin-price{
+    font-size: 1.16em;
+    color: hsl(158, 36%, 37%);
+    font-weight: 500;
+}
+
+#origin-price{
+    text-align: center;
+}
+
+#price{
+    color: #3d8168;
+    font-size: 2em;
+    font-family: Fraunces;
+    display: inline-block;
+    padding-right: 1em;
+}
+
+button{
+    border: none;
+    height: fit-content;
+    width: calc(100% - 0.25em);
+    margin: 3em auto 0;
+    padding: 1em 4em;
+    background-color: #3d8168;
+}
+button > span, i{
+    color: #e2f7ee;
+}
+
+div.info{
+    padding: 2em;
+}
+
+button, .card{
+    border-radius: 0.5em;
+}
+
+
